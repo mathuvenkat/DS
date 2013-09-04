@@ -1,0 +1,14 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Random" duration-ms="39" started-at="2013-09-03T15:35:09Z" finished-at="2013-09-03T15:35:09Z">
+    <groups>
+    </groups>
+    <test name="TestCases" duration-ms="39" started-at="2013-09-03T15:35:09Z" finished-at="2013-09-03T15:35:09Z">
+      <class name="TestCases">
+        <test-method status="PASS" signature="TrieTest()" name="TrieTest" duration-ms="20" started-at="2013-09-03T15:35:09Z" finished-at="2013-09-03T15:35:09Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
