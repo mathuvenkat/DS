@@ -1,0 +1,12 @@
+The problem statement is to find if a node exists in a binary tree by using iterative deepending DFS .
+
+A simple Node object has been implemented just for the same reason .
+A basic BTree class with just the methods needed to implement this particular function has been written.
+
+To terminate the iteration , a class variable is used to indicate that there are no more levels in the tree. 
+
+Testng has been used to test positive/negative and null cases, by comparing data on the nodes , for which equals has been 
+
+overridden.
+A few variations of positive tests have been written to check nodes at various positions in the tree.
+

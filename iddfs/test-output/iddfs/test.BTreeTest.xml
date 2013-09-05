@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.BTreeTest" failures="0" tests="3" time="0.018" errors="0">
+  <properties/>
+  <testcase name="test001" time="0.003" classname="test.BTreeTest"/>
+  <testcase name="test002" time="0.001" classname="test.BTreeTest"/>
+  <testcase name="test003" time="0.0" classname="test.BTreeTest"/>
+</testsuite>
