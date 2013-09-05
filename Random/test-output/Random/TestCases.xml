@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestCases" failures="0" tests="1" time="0.039" errors="0">
+<testsuite name="TestCases" failures="0" tests="1" time="0.025" errors="0">
   <properties/>
-  <testcase name="TrieTest" time="0.02" classname="TestCases"/>
+  <testcase name="LinkedListTest" time="0.0080" classname="TestCases"/>
 </testsuite>

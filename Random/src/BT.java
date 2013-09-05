@@ -1,41 +1,47 @@
-
 public class BT
 {
    Node root;
 
-   public BT( int data)
+   private class Node
+   {
+      int data;
+      Node left;
+      Node right;
+
+      public Node(int data)
+      {
+         this.data = data;
+         this.left = null;
+         this.right = null;
+
+      }
+
+   }
+
+   public BT(int data)
    {
       Node node = new Node(data);
       this.root = node;
    }
 
-
-   public void insert( int data )
+   public void insert(int data)
    {
       Node node = root;
 
-      while( node != null)
-      {
-         if( data < node.data)
-         {
-            if( node.left == null )
-            {
+      while (node != null) {
+         if (data < node.data) {
+            if (node.left == null) {
                node.left = new Node(data);
                break;
-            }
-            else
+            } else
                node = node.left;
          }
 
-         else
-         if( data > node.data)
-         {
-            if( node.right == null )
-            {
+         else if (data > node.data) {
+            if (node.right == null) {
                node.right = new Node(data);
                break;
-            }
-            else
+            } else
                node = node.right;
          }
 
@@ -44,26 +50,25 @@ public class BT
 
    public int maxDepth()
    {
-      return(maxDepth(root));
+      return (maxDepth(root));
    }
 
    public int maxDepth(Node node)
    {
-      if( node == null)
+      if (node == null)
          return 0;
 
-      int left = maxDepth( node.left);
+      int left = maxDepth(node.left);
       int right = maxDepth(node.right);
 
       System.out.println("Left" + left);
       System.out.println("Right" + right);
       System.out.println("data" + node.data);
 
-      if( left > right)
+      if (left > right)
          return left + 1;
       else
          return right + 1;
-
 
    }
 
@@ -74,12 +79,12 @@ public class BT
 
    public void print(Node node)
    {
-      if( node == null)
+      if (node == null)
          return;
 
-      print( node.left);
+      print(node.left);
       System.out.println(node.data);
-      print( node.right);
+      print(node.right);
    }
 
    public static void main(String args[])
@@ -98,8 +103,6 @@ public class BT
 
       int t = bt.maxDepth();
       System.out.println("T" + t);
-
-
 
    }
 

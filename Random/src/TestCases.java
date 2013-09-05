@@ -3,11 +3,10 @@ import junit.framework.Assert;
 import org.testng.annotations.Test;
 
 
-
 public class TestCases
 {
 
-   @Test()
+   //@Test()
    public void TrieTest()
       throws Exception
    {
@@ -32,17 +31,14 @@ public class TestCases
       Assert.assertTrue(trie.containsKey("mathu"));
 
       trie.substrings("ad");
-
       trie.substrings("adv");
-
       trie.substrings( "m");
-
       trie.substrings("aa");
 
    }
 
 
-   @Test()
+   //@Test()
    public void HeapTest()
       throws Exception
    {
@@ -56,14 +52,43 @@ public class TestCases
       tree.insert(15);
 
       tree.traverseInOrder();
-
-
-      int min = tree.getMin();
+      Assert.assertTrue(tree.getMin() == 5);
 
       tree.remove();
-
-      int newmin = tree.getMin();
+      Assert.assertTrue(tree.getMin() == 4);
       tree.traverseInOrder();
+   }
+
+   @Test()
+   public void LinkedListTest()
+      throws Exception
+   {
+      LinkedList list = new LinkedList('n');
+      list.insert('o');
+      list.insert('o');
+      list.insert('n');
+
+      Assert.assertTrue(list.isPalin());
+
+
+      LinkedList list1 = new LinkedList('n');
+      list1.insert('o');
+      list1.insert('r');
+      list1.insert('o');
+      list1.insert('n');
+
+      Assert.assertTrue(list1.isPalin());
+
+
+      LinkedList list2 = new LinkedList('n');
+      list2.insert('o');
+      list2.insert('r');
+      list2.insert('a');
+      list2.insert('n');
+
+      Assert.assertFalse(list2.isPalin());
+
+
 
 
    }
