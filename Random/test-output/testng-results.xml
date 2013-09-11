@@ -1,12 +1,12 @@
 <testng-results>
   <reporter-output>
   </reporter-output>
-  <suite name="Random" duration-ms="13" started-at="2013-09-06T10:25:27Z" finished-at="2013-09-06T10:25:27Z">
+  <suite name="Random" duration-ms="45795" started-at="2013-09-10T15:40:19Z" finished-at="2013-09-10T15:41:05Z">
     <groups>
     </groups>
-    <test name="TestCases" duration-ms="13" started-at="2013-09-06T10:25:27Z" finished-at="2013-09-06T10:25:27Z">
-      <class name="TestCases">
-        <test-method status="PASS" signature="BSTTest()" name="BSTTest" duration-ms="6" started-at="2013-09-06T10:25:27Z" finished-at="2013-09-06T10:25:27Z">
+    <test name="DataStructures.TestCases" duration-ms="45795" started-at="2013-09-10T15:40:19Z" finished-at="2013-09-10T15:41:05Z">
+      <class name="DataStructures.TestCases">
+        <test-method status="PASS" signature="GraphTest()" name="GraphTest" duration-ms="45754" started-at="2013-09-10T15:40:19Z" finished-at="2013-09-10T15:41:05Z">
         </test-method>
       </class>
     </test>
