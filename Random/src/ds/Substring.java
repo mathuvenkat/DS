@@ -142,13 +142,19 @@ public class Substring
 
       for (int curr = 0; curr < arr.length; curr++) {
 
+         System.out.println("curr element" + arr[curr]);
+
          currentSum += arr[curr];
+
+         System.out.println("curr sum" + currentSum);
+         System.out.println("maxStartNow" + maxStartNow);
 
          if (currentSum > maxsum) {
             maxsum = currentSum;
             maxStartIndex = maxStartNow;
             maxEndIndex = curr;
          } else {
+            System.out.println("changing index curr sum" + currentSum);
             if (currentSum < 0) {
                currentSum = 0;
                maxStartNow = curr + 1;
@@ -201,15 +207,42 @@ public class Substring
 
    }
 
+   public static void multiplyArr(int[] a , int[] b){
+      int[] c= new int[a.length + b.length];
+      int row = c.length - 1;
+
+      for( int j = b.length -1 ; j >=0 ; j--){
+         int carry = 0;
+         int shift = row;
+
+         for( int i = a.length -1 ; i >= 0 ;i--){
+            int m = a[i]*b[j];
+            int sum = m + carry + c[shift];
+            c[shift] = sum%10;
+            carry = sum/10;
+            shift--;
+         }
+         c[shift] = carry = c[shift];
+         row--;
+
+      }
+
+   }
+
    public static void main(String args[])
    {
-      // System.out.println( "result is " + Substring.subString("abcabcd",
-      // "abcd") );
-      // Substring.printshuffle(15);
+      System.out.println( "result is " + Substring.subString("abcabcd",
+       "abcd") );
+      Substring.printshuffle(15);
 
       int[] arr = { 1, 5, 8, 14, 25 };
       int[] arr1 = { 1, 4, 6, 8, 13, 27 };
       Substring.merge(arr, arr1);
+
+      int arr5[] = {1 , -3 , 5 ,-2 ,9,-8,-6,4};
+
+
+      maxSum(arr5);
 
    }
 
