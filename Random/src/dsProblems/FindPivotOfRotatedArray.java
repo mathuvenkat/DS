@@ -1,3 +1,4 @@
+package dsProblems;
 import org.junit.Assert;
 
 public class FindPivotOfRotatedArray {

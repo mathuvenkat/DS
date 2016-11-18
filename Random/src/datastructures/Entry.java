@@ -1,4 +1,4 @@
-package ds;
+package datastructures;
 
 public class Entry<K,V>
 {

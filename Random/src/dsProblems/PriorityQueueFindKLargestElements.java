@@ -1,4 +1,5 @@
-package ds;
+package dsProblems;
+
 
 
 public class PriorityQueueFindKLargestElements {

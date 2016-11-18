@@ -1,4 +1,5 @@
-package ds;
+package stringProblems;
+
 import java.util.Random;
 
 public class Substring

@@ -1,4 +1,4 @@
-package graphImpl;
+package graph;
 
 public enum Color
 {

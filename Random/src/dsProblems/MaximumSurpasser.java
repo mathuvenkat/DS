@@ -1,4 +1,5 @@
-package str;
+package dsProblems;
+
 
 public class MaximumSurpasser {
 

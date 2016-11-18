@@ -1,22 +1,23 @@
-package str;
+package stringProblems;
+
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution {
+public class longestSubstringWithNoRepeatedCharacters {
 
    // Given a string, find the longest continuos substring with no repeated characters.
    // try these 
    //Input "abc" Output "abc"
    //Input "abcda" Output "abcd" "bcda"
-   //Input "king of chinaloyd" Output “f chinaloyd"
+   //Input "king of chinaloyd" Output ï¿½f chinaloyd"
    //Input aabbc Output ab bc
    //Input abaaabc Output abc
    //Input "abcdae" Output "bcdae"
 
 
    public static void main(String[] args) {
-      Solution solution = new Solution();
+      longestSubstringWithNoRepeatedCharacters solution = new longestSubstringWithNoRepeatedCharacters();
       String[] input =
             new String[] { "abc", "abcda", "king of chinaloyd", "aabbc",
                   "abaaabc", "abcdae", "aabb", "atabb", "aaa" };

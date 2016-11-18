@@ -1,3 +1,4 @@
+package dsProblems;
 
 public class convertMinHeapToMaxHeap {
 

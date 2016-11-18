@@ -1,4 +1,4 @@
-package graphImpl;
+package graph;
 
 public class Vertex
 {

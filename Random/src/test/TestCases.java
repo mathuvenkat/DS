@@ -3,18 +3,18 @@ package test;
 import java.util.ArrayList;
 import java.util.List;
 
-import graphImpl.Graph;
 import junit.framework.Assert;
+import stringProblems.longestSubstringWithNoRepeatedCharacters;
 
 import org.testng.annotations.Test;
 import org.testng.internal.junit.ArrayAsserts;
 
-import str.Solution;
-import ds.BinarySearchTree;
-import ds.BinarySearchTree.Node;
-import ds.HeapTree;
-import ds.LinkedList;
-import ds.Trie;
+import datastructures.BinarySearchTree;
+import datastructures.HeapTree;
+import datastructures.LinkedList;
+import datastructures.Trie;
+import datastructures.BinarySearchTree.Node;
+import graph.Graph;
 
 public class TestCases {
 
@@ -311,7 +311,7 @@ public class TestCases {
    //@Test()
    public void LongestSubstringTest() throws Exception {
       String res;
-      Solution sol = new Solution();
+      longestSubstringWithNoRepeatedCharacters sol = new longestSubstringWithNoRepeatedCharacters();
       res = sol.findlongestSubstring("abc");
       Assert.assertTrue(res.length() == 3);
 

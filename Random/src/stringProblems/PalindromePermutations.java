@@ -1,4 +1,5 @@
-package str;
+package stringProblems;
+
 
 import java.util.ArrayList;
 import java.util.BitSet;

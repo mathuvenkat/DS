@@ -1,4 +1,5 @@
-package WordLadder;
+package dsProblems;
+
 
 
 import java.util.ArrayList;
