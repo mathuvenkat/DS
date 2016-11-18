@@ -449,22 +449,46 @@ public class BinarySearchTree {
 
    //returns if one node is descendant of the other
    //used to decide which side of the tree the nodes is on.
-   public boolean isDescendantOf(Node root, Node a) {
+   public boolean isLeftDescendantOf(Node root, Node a) {
       if (root == null) {
          return false;
       }
       if (root == a) {
          return true;
       } else {
-         return (isDescendantOf(root.left, a) || isDescendantOf(root.right, a));
+         return (isLeftDescendantOf(root.left, a)
+               || isLeftDescendantOf(root.right, a));
       }
 
+   }
+   
+   private Node getNode(int a, Node node) {
+      if (node == null) {
+         return null;
+      }
+      if (node.data == a) {
+         return node;
+      }
+      if (a < node.data) {
+         node = node.left;
+      } else {
+         node = node.right;
+      }
+      return getNode(a, node);
+
+   }
+   
+   public Node findCommmonAncestor(int a, int b){
+      
+      Node aNode= getNode(a,root);
+      Node bNode= getNode(b,root);
+      return findCommonAncestor(aNode,bNode,root);
    }
 
    public Node findCommonAncestor(Node a, Node b, Node root) {
 
-      boolean isLefta = isDescendantOf(root, a);
-      boolean isLeftb = isDescendantOf(root, b);
+      boolean isLefta = isLeftDescendantOf(root.left, a);
+      boolean isLeftb = isLeftDescendantOf(root.left, b);
 
       if ((isLefta && !isLeftb) || (!isLefta && isLeftb)) {
          return root;
@@ -473,13 +497,13 @@ public class BinarySearchTree {
       else {
          //means they are on the same side.
          if (isLefta) {
-            findCommonAncestor(a, b, root.left);
+            return findCommonAncestor(a, b, root.left);
          } else {
-            findCommonAncestor(a, b, root.right);
+            return findCommonAncestor(a, b, root.right);
          }
 
       }
-      return null;
+     
    }
 
 
@@ -496,17 +520,17 @@ public class BinarySearchTree {
    }
 
    //is valid BST
-   public boolean isBST(Node root, int min, int max) {
-      if (root == null) {
+   public boolean isBST(Node node, int min, int max) {
+      if (node == null) {
          return true;
       }
 
-      if (root.data < min || root.data > max) {
+      if (node.data < min || node.data > max) {
          return false;
       }
 
-      boolean left = isBST(root.left, min, root.data);
-      boolean right = isBST(root.right, root.data, max);
+      boolean left = isBST(node.left, min, node.data);
+      boolean right = isBST(node.right, node.data, max);
       return left && right;
 
    }

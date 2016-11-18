@@ -57,6 +57,9 @@ public class MaximumSurpasser {
 
    public static void main(String args[]) {
       MaximumSurpasser ms = new MaximumSurpasser();
+      
+      //take from last to initialize binary search tree so that for each 
+      //element surpassers are the number of elements above it 
 
       int[] arr = { 82, 74, 17, 93, 96, 20, 55, 15, 24, 25, 56 };
       int[] res_arr = new int[arr.length];

@@ -148,6 +148,16 @@ public class TestCases {
       for (int i = 0; i < postOrder.size(); i++) {
          postOrderArr[i] = postOrder.get(i);
       }
+      
+      System.out.println("Find common ancestor");
+      Node lca = bt.findCommmonAncestor(6,15);
+      Assert.assertTrue(lca.data == 10);
+      
+      lca = bt.findCommmonAncestor(7, 9);
+      Assert.assertTrue(lca.data == 8);
+
+      lca = bt.findCommmonAncestor(7, 30);
+      Assert.assertTrue(lca.data == 16);
 
 
       System.out
