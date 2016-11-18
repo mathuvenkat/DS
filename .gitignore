@@ -1,0 +1,4 @@
+*.class
+Random/.classpath
+Random/.settings
+Random/test-output/*

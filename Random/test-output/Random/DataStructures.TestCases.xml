@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DataStructures.TestCases" failures="0" tests="1" time="45.795" errors="0">
-  <properties/>
-  <testcase name="GraphTest" time="45.754" classname="DataStructures.TestCases"/>
-</testsuite>
